@@ -14,8 +14,8 @@ func main() {
 
 	for _, q := range query {
 		for i, w := range words {
-			if q == w {
-				fmt.Printf("#%-2d: %q\n", i+1, w)
+			if strings.ToLower(q) == w {
+				fmt.Printf("#%-2d: %q\n", i, w)
 			}
 		}
 	}
